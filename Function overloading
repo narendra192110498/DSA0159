@@ -1,0 +1,33 @@
+#include <iostream>
+
+// Function to add two integers
+int add(int a, int b) {
+    return a + b;
+}
+
+// Function to add two floating-point numbers
+double add(double a, double b) {
+    return a + b;
+}
+
+// Function to concatenate two strings
+std::string add(std::string a, std::string b) {
+    return a + b;
+}
+
+int main() {
+    int num1 = 5, num2 = 10;
+    double d1 = 3.5, d2 = 2.5;
+    std::string str1 = "Hello, ", str2 = "world!";
+
+    // Call the appropriate overloaded functions
+    int result1 = add(num1, num2);
+    double result2 = add(d1, d2);
+    std::string result3 = add(str1, str2);
+
+    std::cout << "Sum of integers: " << result1 << std::endl;
+    std::cout << "Sum of doubles: " << result2 << std::endl;
+    std::cout << "Concatenated strings: " << result3 << std::endl;
+
+    return 0;
+}
